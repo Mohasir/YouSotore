@@ -1,0 +1,39 @@
+
+.breadcrumb{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.breadcrumb::after{
+    content: none;
+}
+
+.sidebar-fixed .sidebar{
+    min-height: 100vh;
+}
+
+.head-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 1rem 1rem 2rem;
+}
+
+.flex-beetwen-space{
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-find{
+    display: flex;
+}
+
+th{
+    text-align: center;
+}
+
+.td-btn{
+    text-align: center;
+}
+
