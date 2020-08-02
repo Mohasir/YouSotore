@@ -20,3 +20,15 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+//categories
+Route::group(['middleware' => ['isAjax']], function () {
+
+    Route::get('/categories', 'CategoryController@index');
+    Route::post('/categories', 'CategoryController@store');
+    Route::put('/categories/update', 'CategoryController@update');
+    Route::put('/categories/desactivate', 'CategoryController@desactivate');
+    Route::put('/categories/activate', 'CategoryController@active');
+
+});
+
